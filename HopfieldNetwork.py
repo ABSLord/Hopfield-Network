@@ -55,7 +55,6 @@ class Hopfield:
                 self._h_dist = s
                 self._h_result = arr
         self._h_result = self._h_result.reshape((self._width, self._height))
-        if(save):
+        if save:
             converter.to_bwimage(self._h_result, "h_result.jpg", BIPOLAR_MODE)
         return self._h_dist
-
